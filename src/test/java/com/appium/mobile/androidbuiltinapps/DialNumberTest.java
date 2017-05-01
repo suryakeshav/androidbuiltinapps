@@ -20,8 +20,8 @@ public class DialNumberTest {
 DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		capabilities.setCapability("automationName", "Appium");
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion", "6.0.1");
+		capabilities.setCapability("platformName", System.getProperty("PlatformName"));
+		capabilities.setCapability("platformVersion", System.getProperty("PlatformVersion"));
 		capabilities.setCapability("deviceName", "Moto G (3rd generation)");
 		capabilities.setCapability("appPackage", "com.android.dialer");
 		capabilities.setCapability("appActivity", "DialtactsActivity");
